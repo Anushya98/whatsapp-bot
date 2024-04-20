@@ -1,0 +1,317 @@
+.complaintPageContainer {
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leftColumn {
+    flex: 0.7;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.rightColumn {
+    flex: 0.3;
+    height: 100vh;
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.complaintCard {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: calc(50% - 10px);
+}
+
+.complaintsNo {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    /* align-items: center; */
+    border-radius: 25px;
+    width: 70%;
+    overflow: hidden;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background-color: lightblue;
+    outline: none;
+}
+
+.dropdown {
+    padding: 10px;
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.complaintCard {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+}
+
+.cardContent {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* padding: 0px !important; */
+}
+
+.icon {
+    margin-right: 10px;
+    align-self: center;
+}
+
+.complaintTitle {
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.complaintsNo {
+    margin-left: auto;
+}
+
+.complaintTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.complaintTable th,
+.complaintTable td {
+    padding: 12px 17px;
+    width: 65px;
+    text-align: center;
+    /* Center-align text */
+}
+
+.tablebutton {
+    font-size: 10px !important;
+}
+
+.complaintTable th {
+    background-color: lightblue;
+    color: white;
+    font-size: 12px;
+}
+
+.complaintTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Alternate row background color */
+}
+
+/* 
+.complaintTable td {
+    /* background-color: white; */
+/* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+} */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pageNumber {
+    margin: 0 5px;
+    cursor: pointer;
+    color: blue;
+}
+
+.pageNumber.active {
+    font-weight: bold;
+}
+
+.tableRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Align items vertically to the center */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    font-size: 12px;
+}
+
+.tableheads {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Align items vertically to the center */
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+
+.departmentdetails {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Set the height to 100% of the parent container */
+    overflow: hidden;
+    /* Hide overflow to prevent double scrollbars */
+    border-radius: 25px 0 0 25px !important;
+}
+
+
+.departmentdetails h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.complaintDepartmentCard {
+    margin: 20px !important;
+    border-radius: 20px !important;
+}
+
+.departmentContainer {
+    flex: 1;
+    overflow-y: auto;
+    /* Enable vertical scrolling for the container */
+}
+
+.complaintDepartmentCard {
+    margin: 20px !important;
+    border-radius: 20px !important;
+}
+
+.departmentName {
+    background-color: lightblue;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border-bottom: 1px solid rgb(31, 113, 244);
+    color: rgb(31, 113, 244);
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.complaintDetails {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-size: 14px !important;
+}
+
+.detailLabelheads {
+    flex: 0.7;
+    font-weight: bold !important;
+}
+
+.detailValueheads {
+    background-color: lightblue;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    text-align: right;
+    border-radius: 6px;
+    font-weight: bold !important;
+}
+
+.detailLabel {
+    flex: 0.7;
+}
+
+.detailValue {
+    flex: 0.3;
+    text-align: right;
+}
+
+.cardContentright {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 0px !important;
+}
+
+.progressBarContainer {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin: 10px;
+}
+
+.progress {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progressBarFill {
+    width: 10%;
+    background-color: green;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.detailsButton {
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.progressText {
+    font-size: 10px;
+}
+
+/* Webkit browsers (Chrome, Safari) */
+.departmentContainer::-webkit-scrollbar {
+    width: 10px;
+    /* Set width of the scrollbar */
+}
+
+.departmentContainer::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Firefox */
+.departmentContainer {
+    scrollbar-width: thin;
+    /* Set width of the scrollbar */
+    scrollbar-color: #888 transparent;
+    /* Color of the scrollbar thumb and track */
+}

@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TopBar from './Layouts/Topbar';
+import SideBar from './Layouts/Sidebar';
+import Complaint from './Components/Complaint';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="AppContainer">
+        <TopBar />
+        <div className="ContentContainer">
+          <SideBar />
+          <div className="MainContent">
+            {/* Routes will go here */}
+            <Routes>
+              <Route path="/" exact>
+                Home Page
+              </Route>
+              {/* Add the complaintPage route */}
+              <Route path="/complaint" element={<Complaint />} />
+              {/* Add more routes as needed */}
+            </Routes>
+          </div>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
