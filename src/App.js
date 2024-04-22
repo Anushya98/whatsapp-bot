@@ -4,6 +4,7 @@ import TopBar from './Layouts/Topbar';
 import SideBar from './Layouts/Sidebar';
 import Complaint from './Components/Complaint';
 import './App.css';
+import Sales from './Components/Sales';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
               </Route>
               {/* Add the complaintPage route */}
               <Route path="/complaint" element={<Complaint />} />
+              <Route path="/sales" element={<Sales />} />
               {/* Add more routes as needed */}
             </Routes>
           </div>

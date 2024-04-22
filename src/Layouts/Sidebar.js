@@ -16,7 +16,10 @@ const SideBar = () => {
     const handleOptionClick = (option) => {
         setActiveOption(option);
     };
-
+    const handleSalesClick = () => {
+        setActiveOption('Sales');
+        navigate('/sales');
+    };
     const handleFeedbackClick = () => {
         setActiveOption('Feedback');
         navigate('/feedback');
@@ -45,7 +48,7 @@ const SideBar = () => {
                     <HomeOutlinedIcon className='sidebarOptionIcon' />
                     <div className="sidebarOptionText">Dashboard</div>
                 </div>
-                <div className={`sidebarOption ${activeOption === 'Sales' ? 'active' : ''}`} onClick={() => handleOptionClick('Sales')}>
+                <div className={`sidebarOption ${activeOption === 'Sales' ? 'active' : ''}`} onClick={() => handleSalesClick('Sales')}>
                     <ShoppingCartCheckoutOutlinedIcon className='sidebarOptionIcon' />
                     <div className="sidebarOptionText">Sales</div>
                 </div>

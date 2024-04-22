@@ -63,7 +63,7 @@ function Complaint() {
                                 type="text"
                                 className="search-input"
                                 placeholder="Search..."
-                                style={{ backgroundColor: 'lightblue', border: 'none' }}
+                                style={{ backgroundColor: '#D3ECFD', border: 'none' }}
                                 value={searchTerm}
                                 onChange={handleInputChange}
                             />

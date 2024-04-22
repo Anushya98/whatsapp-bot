@@ -64,14 +64,14 @@
 }
 
 .sidebarOption:hover {
-    color: #85d2f1;
-    border-right: 5px solid #85d2f1;
+    color: #50B6FF;
+    border-right: 5px solid #50B6FF;
     width: -webkit-fill-available;
 }
 
 .sidebarOption.active {
-    color:#85d2f1;
-    border-right: 5px solid #85d2f1;
+    color:#50B6FF;
+    border-right: 5px solid #50B6FF;
     width: -webkit-fill-available;
     border-top-left-radius: 10px;
     /* Curved border top left */

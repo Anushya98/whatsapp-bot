@@ -1,0 +1,121 @@
+.salesContainer {
+    margin: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.topCardsContainer {
+    display: flex;
+    margin-top: 40px;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.iconContainer {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #D3ECFD;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.iconContainer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #D3ECFD;
+    opacity: 0.5;
+}
+
+.iconContainer svg {
+    width: 24px;
+    height: 24px;
+    fill: #50B6FF;
+    z-index: 2;
+}
+
+.salesCard {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px !important;
+    position: relative;
+    width: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    overflow: visible !important;
+}
+
+.SalesTop {
+    /* text-align: center; */
+    display: flex;
+    /* align-self: center; */
+    margin-left: 30px !important;
+    width: min-content;
+}
+
+.salesCardhead {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.percentageRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.percentage {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.changeContainer {
+    padding: 2px 10px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.changeContainer svg {
+    font-size: 15px;
+}
+
+.greenBackground {
+    background-color: rgba(8, 133, 8, 0.322);
+    color: rgb(8, 133, 8);
+}
+
+.redBackground {
+    background-color: rgba(255, 0, 0, 0.277);
+    color: rgb(255, 0, 0);
+}
+
+.cardFooter {
+    font-size: 10px;
+}
+
+.green span {
+    color: rgb(8, 133, 8);
+}
+
+.red span {
+    color: rgb(255, 0, 0);
+}
+
+.leftSideContainer {
+    flex: 1;
+}
